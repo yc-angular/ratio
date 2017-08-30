@@ -8,7 +8,6 @@ export class Ratio {
   constructor(private el: ElementRef) { }
 
   ngOnInit() {
-    this.el.nativeElement.style.display = 'flex';
     this.el.nativeElement.style.width = '100%';
     let width = this.el.nativeElement.getBoundingClientRect().width;
     this.el.nativeElement.style.height = width * this.ycaRatio + 'px';
