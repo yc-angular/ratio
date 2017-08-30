@@ -1,0 +1,28 @@
+{
+  "name": "@yca/ratio",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yc-angular/ratio.git"
+  },
+  "author": {
+    "name": "Yu Chen",
+    "email": "yu.chen@live.ie"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yc-angular/ratio.git/issues"
+  },
+  "main": "yca-ratio.umd.js",
+  "module": "yca-ratio.js",
+  "jsnext:main": "yca-ratio.js",
+  "typings": "yca-ratio.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}
