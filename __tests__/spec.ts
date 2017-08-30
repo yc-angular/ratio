@@ -26,19 +26,19 @@ describe('Test directive', () => {
 
     fixture = TestBed.overrideComponent(TestComponent, {
       set: {
-        template: '<div [ycaRatio]="1"></div>'
+        template: '<div ycaRatio></div>'
       }
     }).createComponent(TestComponent);
     comp = fixture.componentInstance;
   });
 
-  it('Should display flex', () => {
+  it('Should default 1', () => {
     const directiveEl = fixture.debugElement.query(By.directive(Ratio));
     expect(directiveEl).not.toBeNull();
 
     const directiveInstance = directiveEl.injector.get(Ratio);
     directiveInstance.ngOnInit();
-    expect(directiveInstance['el'].nativeElement.style.display).toBe('flex');
+    expect(directiveInstance.ycaRatio).toBe(1);
   });
 
   it('Should have changed', fakeAsync(() => {
